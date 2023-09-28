@@ -1,0 +1,24 @@
+/* ACCORDION */
+div.accordion-wrapper {
+}
+div.accordion-group > div.accordion-header {
+    @apply flex items-center font-normal h-8 cursor-pointer border border-gray-400 dark:border-gray-600;
+}
+div.accordion-group > div.accordion-header-regular {
+    @apply bg-gray-200 text-gray-700
+        hover:bg-gray-300 hover:text-black
+        dark:bg-gray-700 dark:text-gray-300
+        dark:hover:bg-gray-600 dark:hover:text-white;
+}
+div.accordion-group > div.accordion-header-active {
+    @apply bg-gray-300 text-black font-semibold
+        dark:bg-gray-700 dark:text-white
+        hover:bg-gray-300 hover:text-black
+        dark:hover:bg-gray-600 dark:hover:text-white;
+}
+div.accordion-group > div.accordion-content {
+    @apply border border-gray-400 dark:border-gray-600
+        bg-gray-100 dark:bg-gray-900
+        transition-all duration-200 ease-linear
+        overflow-hidden no-scrollbar;
+}
